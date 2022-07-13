@@ -1,24 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Increment from './components/increment';
-import Decrement from './components/decrement';
-
-import{useState} from "react";
+import Home from './pages/home';
+import Router from './router';
 
 function App() {
-  const [counter, setCounter] = useState(0);
-  function handleClick(value){
-    setCounter(value);
-    console.log(counter);
-  }
 debugger;
   return (
     <div className="App">
-      Counter : {counter}
-      {/* <button onClick={handleClick}>Add</button> */}
-      <Increment title="increment" handleCounter= {handleClick} counter={counter}></Increment>
-      <Increment title="decrement" handleCounter= {handleClick} counter={counter}></Increment>
-      {/* <Decrement handleCounter = {handleClick}></Decrement> */}
+      <Router/>
     </div>
   );
 }
