@@ -5,16 +5,14 @@ import Businessdetail from '../components/profile/businessdetail'
 import Contactinfo from '../components/profile/contactinfo'
 import Verifydocument from '../components/profile/verifydocument'
 import Bankdetail from '../components/profile/bankdetail'
+import ProfileDetails from '../components/profile/profileDetails'
 
 function Profile() {
     return (
         <Layout>
             <div>
-                <Contactinfo></Contactinfo>
-                <Businessdetail></Businessdetail>
-                <Billinginformation></Billinginformation>
-                <Bankdetail></Bankdetail>
-                <Verifydocument></Verifydocument>
+                <ProfileDetails></ProfileDetails>
+
             </div>
         </Layout>
     )
