@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from '../components/header'
 import Layout from '../components/layout'
 
-function Home() {
+function Enablers() {
   return (
     <Layout>
-      Home
+    <div>For Enablers</div>
     </Layout>
   )
 }
 
-export default Home
+export default Enablers

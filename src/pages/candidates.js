@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from '../components/header'
 import Layout from '../components/layout'
 
-function Home() {
+function Candidates() {
   return (
     <Layout>
-      Home
+    <div>For Candidates</div>
     </Layout>
   )
 }
 
-export default Home
+export default Candidates
