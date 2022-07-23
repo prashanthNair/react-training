@@ -4,7 +4,6 @@ import Home from './pages/home';
 import Router from './router';
 
 function App() {
-debugger;
   return (
     <div className="App">
       <Router/>

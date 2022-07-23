@@ -5,8 +5,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import Contactinfo from './contactinfo';
+import Billinginformation from './billinginformation';
 
-export default function ProfileDetails() {
+export default function ProfileDetails(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -24,10 +25,23 @@ export default function ProfileDetails() {
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             Contact Info
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
         </AccordionSummary>
         <AccordionDetails>
-            <Contactinfo></Contactinfo>
+            <Contactinfo details={props.data.ContactDetails}></Contactinfo>
+        </AccordionDetails>
+        </Accordion>
+        <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
+        >
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            Billing Info
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+            <Billinginformation details={props.data.AddressDetails.BillingAddress}></Billinginformation>
         </AccordionDetails>
       </Accordion>
     </div>
