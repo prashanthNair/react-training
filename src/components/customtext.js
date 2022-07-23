@@ -17,7 +17,7 @@ export default function CustomTextField({text}) {
           required
           id="outlined-required"
           label={text}
-          defaultValue="Hello World"
+          defaultValue=""
         />
         
       </div>
